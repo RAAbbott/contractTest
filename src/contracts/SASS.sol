@@ -1249,8 +1249,8 @@ abstract contract Ownable is Context {
 pragma solidity ^0.8.0;
 
 contract SASS is ERC721Enumerable, Ownable {
-    uint256 public constant MAX_KOALAS = 10000;
-    uint256 public constant RESERVES = 100;
+    uint256 public constant MAX_KOALAS = 9999;
+    uint256 public constant RESERVES = 150;
 
     uint256 private _conversionRate = 7;
     uint256 private _maxPerTx = 5; // Set to one higher than actual, to save gas on lte/gte checks.
